@@ -2,9 +2,9 @@
     {{-- TOGGLE BUTTON FOR SIDEBAR --}}
     <button class="header-toggler px-md-0 me-md-3" type="button"
         onclick="coreui.Sidebar.getInstance(document.querySelector('#sidebar')).toggle()">
-        <svg class="icon icon-lg">
-            <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-menu"></use>
-        </svg>
+        <span>
+            <i class="fa-solid fa-bars"></i>
+        </span>
     </button><a class="header-brand d-md-none" href="#">
         {{-- TOGGLE BUTTON FOR SIDEBAR END --}}
         <svg width="118" height="46" alt="CoreUI Logo">
@@ -19,18 +19,12 @@
     {{-- left navbar end --}}
     {{-- right nav bar --}}
     <ul class="header-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#"><span><i class="fa-regular fa-bell"></i></span>
+            </a></li>
+        <li class="nav-item"><a class="nav-link" href="#"><span><i class="fa-solid fa-list"></i></span>
+            </a></li>
         <li class="nav-item"><a class="nav-link" href="#">
-                <svg class="icon icon-lg">
-                    <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-bell"></use>
-                </svg></a></li>
-        <li class="nav-item"><a class="nav-link" href="#">
-                <svg class="icon icon-lg">
-                    <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-list-rich"></use>
-                </svg></a></li>
-        <li class="nav-item"><a class="nav-link" href="#">
-                <svg class="icon icon-lg">
-                    <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-envelope-open"></use>
-                </svg></a></li>
+                <i class="fa-regular fa-envelope"></i></a></li>
     </ul>
     {{-- right navbar ends --}}
     {{-- profile navbar --}}
